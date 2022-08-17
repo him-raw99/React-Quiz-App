@@ -17,9 +17,9 @@ function createQuestions(q,quizUpHook){
 function Quiz(props) {
     const [quizUp,setQuizUp]=useState(false);
     return (
-        <div>
+        <div className="quizHolder">
             <h1 className="center" style={{marginTop:"2px", marginBottom:"6px"}}>Answer these questions</h1>
-            <h2 className="center" style={{marginTop:"2px", marginBottom:"6px"}}>In order to prove your culture</h2>
+            <h2 className="center pushDown" style={{marginTop:"2px"}}>In order to prove your culture</h2>
             {questions.map((q)=>createQuestions(q,quizUp))}
             {quizUp?<Button startQuiz={props.startQuiz} setStartQuiz={props.setStartQuiz} /> : <button className="btn btn-outline-dark center-btn" onClick={()=>setQuizUp(true)}>Check Yo Answers</button>}
         </div>

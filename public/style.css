@@ -30,11 +30,21 @@ body{
 
 /*                                       Quiz section                         */
 
+.pushDown{
+    margin-bottom: 3rem;
+}
+
+.quizHolder{
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
 
 .question{
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-right: 2rem;
+    margin-bottom: 1rem;
 }
 
 .option{
@@ -44,6 +54,7 @@ body{
     margin: 1rem;
     padding: 0.5rem 2rem;
     border-radius: 13px;
+    margin-bottom: 2rem;
 }
 
 .option:hover{
